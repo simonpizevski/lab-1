@@ -90,7 +90,7 @@ public class Main {
             }
             sum += prices[i];
         }
-        double avg = sum / prices.length;
+        double avg = (double) sum / prices.length;
 
         System.out.println("Lägsta pris: " + min + " öre");
         System.out.println("Högsta pris: " + max + " öre");
@@ -127,7 +127,7 @@ public class Main {
             }
         }
 
-        double avg = min / 4;
+        double avg = (double) min / 4;
 
         System.out.println("Bästa tiden att ladda är mellan " + String.format("%02d", hour) + ":00 och " + String.format("%02d", (hour +4) % 24) + ":00");
         System.out.println("Medelpriset är: " + avg + " öre");
